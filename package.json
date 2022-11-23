@@ -21,6 +21,6 @@
     "@solidjs/router": "^0.5.1",
     "@tanstack/solid-query": "^4.15.1",
     "axios": "^1.2.0",
-    "solid-js": "^1.5.1"
+    "solid-js": "^1.6.2"
   }
 }

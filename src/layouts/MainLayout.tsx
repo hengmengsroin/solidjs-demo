@@ -1,13 +1,14 @@
 import { Routes, Route } from "@solidjs/router";
+import { QueryClient, QueryClientProvider } from "@tanstack/solid-query";
 import AppBar from "../components/AppBar";
 import Footer from "../components/Footer";
 import HomePage from "../pages/Home";
 import LoginPage from "../pages/Login";
 import UserPage from "../pages/User";
-
+const queryClient = new QueryClient();
 export default function MainLayout() {
   return (
-    <div>
+    <QueryClientProvider client={queryClient}>
       <AppBar />
       <div class="w-full h-full">
         <Routes>
@@ -22,6 +23,6 @@ export default function MainLayout() {
       </div>
 
       <Footer />
-    </div>
+    </QueryClientProvider>
   );
 }
