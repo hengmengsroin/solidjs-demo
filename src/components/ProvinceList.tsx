@@ -15,7 +15,7 @@ export default function ProvinceList() {
           <p>Error</p>
         </Match>
         <Match when={provinceList.isSuccess}>
-          <div class="w-full flex flex-row items-center justify-center gap-2 py-1 overflow-x-auto">
+          <div class="w-full flex flex-row items-center  gap-2 py-1 overflow-x-auto">
             <For each={provinceList.data?.data}>
               {(item) => {
                 console.log({ item });
@@ -58,7 +58,7 @@ function ProvinceTile({ name, _id, image }: ProvinceTileProp) {
           alt={name}
         />
       </div>
-      <div class="p-3">{name}</div>
+      <div class="p-2 text-center">{name}</div>
     </div>
   );
 }
