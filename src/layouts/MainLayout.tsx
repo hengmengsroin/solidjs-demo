@@ -10,7 +10,7 @@ export default function MainLayout() {
   return (
     <QueryClientProvider client={queryClient}>
       <AppBar />
-      <div class="w-full h-full">
+      <div class="w-full h-full px-[15%]">
         <Routes>
           <Route path="/" component={HomePage} />
           <Route path="/user" component={UserPage} />

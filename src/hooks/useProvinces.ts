@@ -2,7 +2,7 @@ import { createQuery } from "@tanstack/solid-query";
 import { apiHelper } from "../services/api-helper";
 
 const useProvinces = () =>
-  createQuery(
+  createQuery<DataRes>(
     () => ["provinces"],
     () => apiHelper.getProvinces(),
     {
@@ -12,3 +12,14 @@ const useProvinces = () =>
   );
 
 export default useProvinces;
+type Province = {
+  _id: string;
+  name: string;
+  kh_name: string;
+  thumbnail: string;
+};
+
+type DataRes = {
+  data: Province[];
+  pagination: any;
+};
