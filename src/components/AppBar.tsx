@@ -7,13 +7,18 @@ export default function AppBar() {
   }
   return (
     <div class="flex flex-1 flex-row px-[15%] h-16 items-center bg-blue-200">
-      <div class="cursor-pointer p-2" onClick={goHome}>
+      <div class="cursor-pointer py-2" onClick={goHome}>
         Logo
       </div>
       <div class="flex-1"></div>
       <div>Search box</div>
       <div class="flex-1"></div>
-      <button class="py-2 px-4 rounded-md bg-blue-700 text-white ">
+      <button
+        class="py-2 px-4 rounded-md bg-blue-700 text-white "
+        onClick={() => {
+          navigate("/login");
+        }}
+      >
         Login
       </button>
     </div>
