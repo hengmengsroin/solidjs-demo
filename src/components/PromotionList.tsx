@@ -12,7 +12,7 @@ const PromotionList = () => {
   );
 
   return (
-    <div class="w-full">
+    <div class="w-full py-2">
       <Switch>
         <Match when={query.loading}>
           <p>Loading...</p>

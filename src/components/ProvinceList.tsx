@@ -6,7 +6,7 @@ export default function ProvinceList() {
   let provinceList = useProvinces();
 
   return (
-    <div class="w-full">
+    <div class="w-full py-2">
       <Switch>
         <Match when={provinceList.isLoading}>
           <p>Loading...</p>
