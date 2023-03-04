@@ -21,8 +21,12 @@ export default function ServiceDetailPage() {
                 class="h-full w-full object-cover"
               />
             </div>
-            <div class="text-xl font-medium py-2">{serviceRes().name}</div>
-            <div>{serviceRes().merchant.name}</div>
+            <div class="text-xl font-medium p-2 bg-red-100">
+              {serviceRes().name}
+            </div>
+            <div class="text-ellipsis font-medium text-red-200 bg-blue-500 p-3 rounded-sm border-r-amber-100">
+              {serviceRes().merchant.name}
+            </div>
             <div>{serviceRes().overall_rating.overall}</div>
           </div>
         </Match>

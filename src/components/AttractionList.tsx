@@ -57,7 +57,7 @@ function AttractionTile({ service }: any) {
           alt={name}
         />
       </div>
-      <div class="p-2 text-center">{name}</div>
+      <div class="p-3 text-center text-blue-900 font-medium">{name}</div>
     </div>
   );
 }

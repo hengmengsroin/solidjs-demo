@@ -46,17 +46,13 @@ function ProvinceTile({ name, _id, image }: ProvinceTileProp) {
   }
   return (
     <div
-      class={`flex flex-col  shadow-md rounded-md cursor-pointer  ${
+      class={`flex flex-col  shadow-md   cursor-pointer  ${
         activeProvince() == _id ? "border-solid border-2 border-blue-500" : ""
       }`}
       onClick={selectProvince}
     >
       <div class="h-[80px]">
-        <img
-          class="object-cover w-full h-full rounded-md"
-          src={image}
-          alt={name}
-        />
+        <img class="object-cover w-full h-full " src={image} alt={name} />
       </div>
       <div class="p-2 text-center">{name}</div>
     </div>
